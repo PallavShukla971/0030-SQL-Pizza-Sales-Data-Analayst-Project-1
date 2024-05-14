@@ -4,11 +4,8 @@ Answers to Questions:
 ____________________________________________________________
 
 Basic:
-
 Retrieve the total number of orders placed.
-
 select count(order_id) as total_orders from orders;
-
 
 Calculate the total revenue generated from pizza sales.
 Identify the highest-priced pizza.
