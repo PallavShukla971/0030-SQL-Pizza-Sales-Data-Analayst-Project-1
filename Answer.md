@@ -6,13 +6,21 @@ ____________________________________________________________
 Basic:
 
 Retrieve the total number of orders placed.
-select count(order_id) as total_orders from orders;
+ -> select count(order_id) as total_orders from orders;
 
 Calculate the total revenue generated from pizza sales.
+ -> 
 Identify the highest-priced pizza.
-Identify the most common pizza size ordered.
-List the top 5 most ordered pizza types along with their quantities.
+ -> 
 
+Identify the most common pizza size ordered.
+ -> 
+
+List the top 5 most ordered pizza types along with their quantities.
+ -> 
+
+
+____________________________________________________________
 
 Intermediate:
 Join the necessary tables to find the total quantity of each pizza category ordered.
