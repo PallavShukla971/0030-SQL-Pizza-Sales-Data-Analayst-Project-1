@@ -5,12 +5,16 @@ ____________________________________________________________
 
 Basic:
 
-Retrieve the total number of orders placed.
- -> select count(order_id) as total_orders from orders;
+-- Retrieve the total number of orders placed.
+ -> SELECT 
+    COUNT(order_id) AS total_orders
+FROM
+    orders;
 
-Calculate the total revenue generated from pizza sales.
+-- Calculate the total revenue generated from pizza sales.
  -> 
-Identify the highest-priced pizza.
+
+-- Identify the highest-priced pizza.
  -> 
 
 Identify the most common pizza size ordered.
