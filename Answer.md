@@ -85,8 +85,33 @@ Intermediate:
 -- 6. Join the necessary tables to find the total quantity of each pizza category ordered.
  -> 
 
+SELECT 
+    pizza_types.category,
+    SUM(order_details.quantity) AS quantity
+FROM
+    pizza_types
+        JOIN
+    pizzas ON pizza_types.pizza_type_id = pizzas.pizza_type_id
+        JOIN
+    order_details ON order_details.pizza_id = pizzas.pizza_id
+GROUP BY pizza_types.category
+ORDER BY quantity DESC;   
+
 -- 7. Determine the distribution of orders by hour of the day.
  -> 
+
+ -- first we check the data 
+SELECT 
+    *
+FROM
+    orders;
+-- now we need order time from the data
+SELECT 
+    HOUR(order_time) AS hour, COUNT(order_id) AS order_count
+FROM
+    orders
+GROUP BY hour
+ORDER BY hour asc;
 
 -- 8. Join relevant tables to find the category-wise distribution of pizzas.
  -> 
