@@ -116,8 +116,16 @@ ORDER BY hour asc;
 -- 8. Join relevant tables to find the category-wise distribution of pizzas.
  -> 
 
+SELECT
+    category, COUNT(name)
+FROM
+    pizza_types
+GROUP BY category;
+
 -- 9. Group the orders by date and calculate the average number of pizzas ordered per day.
  -> 
+
+
 
 -- 10. Determine the top 3 most ordered pizza types based on revenue.
  -> 
